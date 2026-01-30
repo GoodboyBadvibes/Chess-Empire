@@ -24,54 +24,99 @@ export const db = drizzle(pool, { schema });
 // Database service class
 class DatabaseService {
   async getRoles() {
-    return await db.query.roles.findMany({
-      where: (roles, { eq }) => eq(roles.isActive, true),
-    });
+    try {
+      return await db.query.roles.findMany({
+        where: (roles, { eq }) => eq(roles.isActive, true),
+      });
+    } catch (error) {
+      console.error("Error fetching roles:", error);
+      return [];
+    }
   }
 
   async getRole(id: number) {
-    const [role] = await db.query.roles.findMany({
-      where: (roles, { eq }) => eq(roles.id, id),
-    });
-    return role;
+    try {
+      const [role] = await db.query.roles.findMany({
+        where: (roles, { eq }) => eq(roles.id, id),
+      });
+      return role;
+    } catch (error) {
+      console.error("Error fetching role:", error);
+      return null;
+    }
   }
 
   async createRole(data: any) {
-    const [role] = await db.insert(schema.roles).values(data).returning();
-    return role;
+    try {
+      const [role] = await db.insert(schema.roles).values(data).returning();
+      return role;
+    } catch (error) {
+      console.error("Error creating role:", error);
+      return null;
+    }
   }
 
   async createApplication(data: any) {
-    const [app] = await db
-      .insert(schema.applications)
-      .values(data)
-      .returning();
-    return app;
+    try {
+      const [app] = await db
+        .insert(schema.applications)
+        .values(data)
+        .returning();
+      return app;
+    } catch (error) {
+      console.error("Error creating application:", error);
+      return null;
+    }
   }
 
   async getProducts() {
-    return await db.query.products.findMany();
+    try {
+      return await db.query.products.findMany();
+    } catch (error) {
+      console.error("Error fetching products:", error);
+      return [];
+    }
   }
 
   async createProduct(data: any) {
-    const [product] = await db.insert(schema.products).values(data).returning();
-    return product;
+    try {
+      const [product] = await db.insert(schema.products).values(data).returning();
+      return product;
+    } catch (error) {
+      console.error("Error creating product:", error);
+      return null;
+    }
   }
 
   async getStories() {
-    return await db.query.stories.findMany();
+    try {
+      return await db.query.stories.findMany();
+    } catch (error) {
+      console.error("Error fetching stories:", error);
+      return [];
+    }
   }
 
   async getStory(id: number) {
-    const [story] = await db.query.stories.findMany({
-      where: (stories, { eq }) => eq(stories.id, id),
-    });
-    return story;
+    try {
+      const [story] = await db.query.stories.findMany({
+        where: (stories, { eq }) => eq(stories.id, id),
+      });
+      return story;
+    } catch (error) {
+      console.error("Error fetching story:", error);
+      return null;
+    }
   }
 
   async createStory(data: any) {
-    const [story] = await db.insert(schema.stories).values(data).returning();
-    return story;
+    try {
+      const [story] = await db.insert(schema.stories).values(data).returning();
+      return story;
+    } catch (error) {
+      console.error("Error creating story:", error);
+      return null;
+    }
   }
 
   // Seed database if needed

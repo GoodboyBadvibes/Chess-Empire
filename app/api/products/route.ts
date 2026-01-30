@@ -4,11 +4,12 @@ import { NextResponse } from "next/server";
 export async function GET() {
   try {
     const products = await Ce.getProducts();
-    return NextResponse.json(products);
+    return NextResponse.json(products || []);
   } catch (error) {
-    console.error("Error fetching products:", error);
+    const errorMsg = error instanceof Error ? error.message : String(error);
+    console.error("Error fetching products:", errorMsg);
     return NextResponse.json(
-      { message: "Internal server error" },
+      { message: errorMsg, error: "Internal server error" },
       { status: 500 },
     );
   }

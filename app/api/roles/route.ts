@@ -4,11 +4,12 @@ import { NextResponse } from "next/server";
 export async function GET() {
   try {
     const roles = await Ce.getRoles();
-    return NextResponse.json(roles);
+    return NextResponse.json(roles || []);
   } catch (error) {
-    console.error("Error fetching roles:", error);
+    const errorMsg = error instanceof Error ? error.message : String(error);
+    console.error("Error fetching roles:", errorMsg);
     return NextResponse.json(
-      { message: "Internal server error" },
+      { message: errorMsg, error: "Internal server error" },
       { status: 500 },
     );
   }
