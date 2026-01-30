@@ -2,11 +2,6 @@
   "buildCommand": "pnpm run build",
   "installCommand": "pnpm install --no-frozen-lockfile",
   "outputDirectory": "dist/public",
-  "functions": {
-    "dist/index.cjs": {
-      "runtime": "nodejs20.x"
-    }
-  },
   "routes": [
     { "src": "/api/(.*)", "dest": "/dist/index.cjs" },
     { "src": "/(.*)", "dest": "/dist/public/$1" },
