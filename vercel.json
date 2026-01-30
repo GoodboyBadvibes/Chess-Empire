@@ -1,9 +1,7 @@
 {
-  "buildCommand": "pnpm run build",
-  "installCommand": "pnpm install --no-frozen-lockfile",
-  "routes": [
-    { "src": "/api/(.*)", "dest": "dist/index.cjs" },
-    { "src": "/static/(.*)", "dest": "dist/public/static/$1" },
-    { "src": "^/(?!api).*", "dest": "dist/index.cjs" }
-  ]
+  "buildCommand": "next build",
+  "devCommand": "next dev",
+  "installCommand": "pnpm install",
+  "framework": "nextjs",
+  "nodeVersion": "18.x"
 }
