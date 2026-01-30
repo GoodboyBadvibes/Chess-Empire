@@ -1,10 +1,9 @@
 {
   "buildCommand": "pnpm run build",
   "installCommand": "pnpm install --no-frozen-lockfile",
-  "outputDirectory": "dist/public",
   "routes": [
-    { "src": "/api/(.*)", "dest": "/dist/index.cjs" },
-    { "src": "/(.*)", "dest": "/dist/public/$1" },
-    { "src": "/(.*)", "dest": "/dist/index.cjs" }
+    { "src": "/api/(.*)", "dest": "dist/index.cjs" },
+    { "src": "/static/(.*)", "dest": "dist/public/static/$1" },
+    { "src": "^/(?!api).*", "dest": "dist/index.cjs" }
   ]
 }
