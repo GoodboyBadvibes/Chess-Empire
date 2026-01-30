@@ -1,0 +1,5 @@
+onlyBuiltDependencies:
+  - '@prisma/engines'
+  - bufferutil
+  - esbuild
+  - prisma
