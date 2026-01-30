@@ -1,6 +1,6 @@
 {
   "buildCommand": "pnpm run build",
-  "installCommand": "pnpm install --no-frozen-lockfile --allow-scripts",
+  "installCommand": "pnpm install --no-frozen-lockfile",
   "rewrites": [
     { "source": "/(.*)", "destination": "/" }
   ]
