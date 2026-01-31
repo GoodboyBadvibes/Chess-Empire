@@ -250,7 +250,7 @@ export default function Home() {
                     {story.excerpt}
                   </p>
                   <Button
-                    variant="link"
+                    variant="ghost"
                     className="p-0 h-auto text-primary hover:text-accent group uppercase tracking-widest text-sm font-bold mt-4"
                   >
                     Read Story{" "}

@@ -1891,6 +1891,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: calc(3rem * var(--tw-space-y-reverse));
 }
 
+.space-y-16 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(4rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(4rem * var(--tw-space-y-reverse));
+}
+
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1933,6 +1939,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .whitespace-nowrap {
   white-space: nowrap;
+}
+
+.text-wrap {
+  text-wrap: wrap;
 }
 
 .break-words {
@@ -2189,6 +2199,10 @@ h1, h2, h3, h4, h5, h6 {
   background-color: hsl(var(--muted) / var(--tw-bg-opacity, 1));
 }
 
+.bg-muted-foreground\/30 {
+  background-color: hsl(var(--muted-foreground) / .3);
+}
+
 .bg-muted\/30 {
   background-color: hsl(var(--muted) / .3);
 }
@@ -2205,6 +2219,10 @@ h1, h2, h3, h4, h5, h6 {
 .bg-primary {
   --tw-bg-opacity: 1;
   background-color: hsl(var(--primary) / var(--tw-bg-opacity, 1));
+}
+
+.bg-primary\/10 {
+  background-color: hsl(var(--primary) / .1);
 }
 
 .bg-secondary {
@@ -2739,6 +2757,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #fffc;
 }
 
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .opacity-0 {
   opacity: 0;
 }
@@ -3007,6 +3030,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .ease-linear {
   animation-timing-function: linear;
+}
+
+.text-balance {
+  text-wrap: balance;
 }
 
 .font-serif-italic {
@@ -3467,6 +3494,10 @@ h1, h2, h3, h4, h5, h6 {
   background-color: hsl(var(--muted) / var(--tw-bg-opacity, 1));
 }
 
+.hover\:bg-muted-foreground\/50:hover {
+  background-color: hsl(var(--muted-foreground) / .5);
+}
+
 .hover\:bg-muted\/50:hover {
   background-color: hsl(var(--muted) / .5);
 }
@@ -3549,6 +3580,12 @@ h1, h2, h3, h4, h5, h6 {
 .hover\:shadow-\[0_0_0_1px_hsl\(var\(--sidebar-accent\)\)\]:hover {
   --tw-shadow: 0 0 0 1px hsl(var(--sidebar-accent));
   --tw-shadow-colored: 0 0 0 1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.hover\:shadow-lg:hover {
+  --tw-shadow: 0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -3686,6 +3723,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .group:hover .group-hover\:translate-x-1 {
   --tw-translate-x: .25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:translate-x-2 {
+  --tw-translate-x: .5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -4431,6 +4473,10 @@ h1, h2, h3, h4, h5, h6 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -4441,6 +4487,10 @@ h1, h2, h3, h4, h5, h6 {
 
   .md\:gap-24 {
     gap: 6rem;
+  }
+
+  .md\:p-12 {
+    padding: 3rem;
   }
 
   .md\:py-32 {
