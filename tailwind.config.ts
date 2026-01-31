@@ -2,7 +2,13 @@ import type { Config } from "tailwindcss";
 
 export default {
   darkMode: ["class"],
-  content: ["./app/**/*.{js,jsx,ts,tsx}", "./components/**/*.{js,jsx,ts,tsx}"],
+  // Include original Vite `client/` paths so Tailwind picks up classes
+  content: [
+    "./app/**/*.{js,jsx,ts,tsx}",
+    "./components/**/*.{js,jsx,ts,tsx}",
+    "./client/**/*.{js,jsx,ts,tsx,html}",
+    "./client/**/index.css",
+  ],
   theme: {
     extend: {
       borderRadius: {
