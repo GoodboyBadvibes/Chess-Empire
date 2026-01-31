@@ -8,9 +8,6 @@ export async function GET() {
   } catch (error) {
     const errorMsg = error instanceof Error ? error.message : String(error);
     console.error("Error fetching roles:", errorMsg);
-    return NextResponse.json(
-      { message: errorMsg, error: "Internal server error" },
-      { status: 500 },
-    );
+    return NextResponse.json([], { status: 200 });
   }
 }

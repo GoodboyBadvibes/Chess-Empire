@@ -25,9 +25,9 @@ export default function Home() {
         const productsData = await productsRes.json();
         const storiesData = await storiesRes.json();
 
-        setRoles(rolesData);
-        setProducts(productsData);
-        setStories(storiesData);
+        setRoles(Array.isArray(rolesData) ? rolesData : []);
+        setProducts(Array.isArray(productsData) ? productsData : []);
+        setStories(Array.isArray(storiesData) ? storiesData : []);
       } catch (error) {
         console.error("Error fetching data:", error);
       } finally {
