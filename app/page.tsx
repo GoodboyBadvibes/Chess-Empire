@@ -122,16 +122,34 @@ export default function Home() {
       {/* === MANIFESTO === */}
       <Section id="manifesto" className="bg-background">
         <div className="max-w-4xl mx-auto px-6 text-center space-y-12">
-          <span className="inline-block text-xs font-bold tracking-[0.3em] uppercase text-accent">
+          <motion.span
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="inline-block text-xs font-bold tracking-[0.3em] uppercase text-accent"
+          >
             The Vision
-          </span>
-          <h2 className="font-display text-4xl md:text-6xl leading-tight">
+          </motion.span>
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+            viewport={{ once: true }}
+            className="font-display text-4xl md:text-6xl leading-tight"
+          >
             Chess is not just a game. <br />
             It is a language of{" "}
             <span className="font-serif-italic text-accent">intellect</span> and{" "}
             <span className="font-serif-italic text-accent">war</span>.
-          </h2>
-          <div className="prose prose-lg md:prose-xl mx-auto text-muted-foreground font-light leading-relaxed">
+          </motion.h2>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="prose prose-lg md:prose-xl mx-auto text-muted-foreground font-light leading-relaxed"
+          >
             <p>
               We believe the chess world has been stagnant for too long. We are
               here to disrupt it with luxury, storytelling, and technology. We're
@@ -139,14 +157,20 @@ export default function Home() {
               and the artist, the player and the collector.
             </p>
             <p>This isn't about selling boards. It's about selling a legacy.</p>
-          </div>
+          </motion.div>
         </div>
       </Section>
 
       {/* === ECOSYSTEM (PRODUCTS) === */}
       <Section id="ecosystem" className="bg-primary text-primary-foreground py-32">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-16 border-b border-white/10 pb-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="flex flex-col md:flex-row justify-between items-end mb-16 border-b border-white/10 pb-8"
+          >
             <div>
               <span className="block text-xs font-bold tracking-[0.3em] uppercase text-accent mb-4">
                 The Ecosystem
@@ -159,7 +183,7 @@ export default function Home() {
               Luxury boards, curated merchandise, and digital experiences
               designed for the modern strategist.
             </p>
-          </div>
+          </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {products?.map((product, idx) => (
@@ -210,14 +234,20 @@ export default function Home() {
       {/* === STORIES === */}
       <Section id="stories" className="bg-muted/30">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-20">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-20"
+          >
             <span className="block text-xs font-bold tracking-[0.3em] uppercase text-accent mb-4">
               The Human Element
             </span>
             <h2 className="font-display text-4xl md:text-6xl text-primary">
               Deeply Human Stories
             </h2>
-          </div>
+          </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24">
             {stories?.map((story, idx) => (
