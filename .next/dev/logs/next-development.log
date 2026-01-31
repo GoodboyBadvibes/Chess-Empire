@@ -1,1 +1,358 @@
-[00:00:03.359] Server  LOG     ✓ Ready in 2.2s
+[00:00:05.585] Server  LOG     ✓ Ready in 4.6s
+[00:00:17.655] Server  LOG     ○ Compiling / ...
+[00:00:31.371] Server  ERROR   ⨯ ./app/globals.css:3550:18
+Parsing CSS source code failed
+  3548 |   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  3549 | }
+> 3550 | .hover\:bg-white:hoverspan {
+       |                  ^
+  3551 |     font-family: 'Manrope', sans-serif;
+  3552 |     font-size: 14px;
+  3553 |     font-weight: 700;
+
+'hoverspan' is not recognized as a valid pseudo-class. Did you mean '::hoverspan' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:36.316] Browser ERROR   uncaughtError: Error: ./app/globals.css:3550:18
+Parsing CSS source code failed
+  3548 |   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  3549 | }
+> 3550 | .hover\:bg-white:hoverspan {
+       |                  ^
+  3551 |     font-family: 'Manrope', sans-serif;
+  3552 |     font-size: 14px;
+  3553 |     font-weight: 700;
+
+'hoverspan' is not recognized as a valid pseudo-class. Did you mean '::hoverspan' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:36.762] Browser ERROR   ./app/globals.css:3550:18
+Parsing CSS source code failed
+  3548 |   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  3549 | }
+> 3550 | .hover\:bg-white:hoverspan {
+       |                  ^
+  3551 |     font-family: 'Manrope', sans-serif;
+  3552 |     font-size: 14px;
+  3553 |     font-weight: 700;
+
+'hoverspan' is not recognized as a valid pseudo-class. Did you mean '::hoverspan' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:00:38.775] Browser ERROR   ./app/globals.css:3550:18
+Parsing CSS source code failed
+  3548 |   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  3549 | }
+> 3550 | .hover\:bg-white:hoverspan {
+       |                  ^
+  3551 |     font-family: 'Manrope', sans-serif;
+  3552 |     font-size: 14px;
+  3553 |     font-weight: 700;
+
+'hoverspan' is not recognized as a valid pseudo-class. Did you mean '::hoverspan' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:28:10.767] Browser ERROR   ./app/globals.css:3550:18
+Parsing CSS source code failed
+  3548 |   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  3549 | }
+> 3550 | .hover\:bg-white:hoverspan {
+       |                  ^
+  3551 |     font-family: 'Manrope', sans-serif;
+  3552 |     font-size: 14px;
+  3553 |     font-weight: 700;
+
+'hoverspan' is not recognized as a valid pseudo-class. Did you mean '::hoverspan' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:28:10.767] Browser ERROR   ./app/globals.css:3550:18
+Parsing CSS source code failed
+  3548 |   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  3549 | }
+> 3550 | .hover\:bg-white:hoverspan {
+       |                  ^
+  3551 |     font-family: 'Manrope', sans-serif;
+  3552 |     font-size: 14px;
+  3553 |     font-weight: 700;
+
+'hoverspan' is not recognized as a valid pseudo-class. Did you mean '::hoverspan' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:28:15.127] Browser ERROR   ./app/globals.css:3550:18
+Parsing CSS source code failed
+  3548 |   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  3549 | }
+> 3550 | .hover\:bg-white:hoverspan {
+       |                  ^
+  3551 |     font-family: 'Manrope', sans-serif;
+  3552 |     font-size: 14px;
+  3553 |     font-weight: 700;
+
+'hoverspan' is not recognized as a valid pseudo-class. Did you mean '::hoverspan' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:28:15.127] Browser ERROR   ./app/globals.css:3550:18
+Parsing CSS source code failed
+  3548 |   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  3549 | }
+> 3550 | .hover\:bg-white:hoverspan {
+       |                  ^
+  3551 |     font-family: 'Manrope', sans-serif;
+  3552 |     font-size: 14px;
+  3553 |     font-weight: 700;
+
+'hoverspan' is not recognized as a valid pseudo-class. Did you mean '::hoverspan' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:28:15.762] Browser ERROR   ./app/globals.css:3550:18
+Parsing CSS source code failed
+  3548 |   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  3549 | }
+> 3550 | .hover\:bg-white:hoverspan {
+       |                  ^
+  3551 |     font-family: 'Manrope', sans-serif;
+  3552 |     font-size: 14px;
+  3553 |     font-weight: 700;
+
+'hoverspan' is not recognized as a valid pseudo-class. Did you mean '::hoverspan' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:28:15.762] Browser ERROR   ./app/globals.css:3550:18
+Parsing CSS source code failed
+  3548 |   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  3549 | }
+> 3550 | .hover\:bg-white:hoverspan {
+       |                  ^
+  3551 |     font-family: 'Manrope', sans-serif;
+  3552 |     font-size: 14px;
+  3553 |     font-weight: 700;
+
+'hoverspan' is not recognized as a valid pseudo-class. Did you mean '::hoverspan' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[01:27:19.758] Browser ERROR   ./app/globals.css:3550:18
+Parsing CSS source code failed
+  3548 |   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  3549 | }
+> 3550 | .hover\:bg-white:hoverspan {
+       |                  ^
+  3551 |     font-family: 'Manrope', sans-serif;
+  3552 |     font-size: 14px;
+  3553 |     font-weight: 700;
+
+'hoverspan' is not recognized as a valid pseudo-class. Did you mean '::hoverspan' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[01:27:19.758] Browser ERROR   ./app/globals.css:3550:18
+Parsing CSS source code failed
+  3548 |   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  3549 | }
+> 3550 | .hover\:bg-white:hoverspan {
+       |                  ^
+  3551 |     font-family: 'Manrope', sans-serif;
+  3552 |     font-size: 14px;
+  3553 |     font-weight: 700;
+
+'hoverspan' is not recognized as a valid pseudo-class. Did you mean '::hoverspan' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[02:03:20.771] Browser ERROR   ./app/globals.css:3550:18
+Parsing CSS source code failed
+  3548 |   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  3549 | }
+> 3550 | .hover\:bg-white:hoverspan {
+       |                  ^
+  3551 |     font-family: 'Manrope', sans-serif;
+  3552 |     font-size: 14px;
+  3553 |     font-weight: 700;
+
+'hoverspan' is not recognized as a valid pseudo-class. Did you mean '::hoverspan' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[02:05:24.773] Browser ERROR   ./app/globals.css:3550:18
+Parsing CSS source code failed
+  3548 |   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  3549 | }
+> 3550 | .hover\:bg-white:hoverspan {
+       |                  ^
+  3551 |     font-family: 'Manrope', sans-serif;
+  3552 |     font-size: 14px;
+  3553 |     font-weight: 700;
+
+'hoverspan' is not recognized as a valid pseudo-class. Did you mean '::hoverspan' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[02:23:20.766] Browser ERROR   ./app/globals.css:3550:18
+Parsing CSS source code failed
+  3548 |   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  3549 | }
+> 3550 | .hover\:bg-white:hoverspan {
+       |                  ^
+  3551 |     font-family: 'Manrope', sans-serif;
+  3552 |     font-size: 14px;
+  3553 |     font-weight: 700;
+
+'hoverspan' is not recognized as a valid pseudo-class. Did you mean '::hoverspan' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[02:24:10.773] Browser ERROR   ./app/globals.css:3550:18
+Parsing CSS source code failed
+  3548 |   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  3549 | }
+> 3550 | .hover\:bg-white:hoverspan {
+       |                  ^
+  3551 |     font-family: 'Manrope', sans-serif;
+  3552 |     font-size: 14px;
+  3553 |     font-weight: 700;
+
+'hoverspan' is not recognized as a valid pseudo-class. Did you mean '::hoverspan' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[02:45:20.763] Browser ERROR   ./app/globals.css:3550:18
+Parsing CSS source code failed
+  3548 |   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  3549 | }
+> 3550 | .hover\:bg-white:hoverspan {
+       |                  ^
+  3551 |     font-family: 'Manrope', sans-serif;
+  3552 |     font-size: 14px;
+  3553 |     font-weight: 700;
+
+'hoverspan' is not recognized as a valid pseudo-class. Did you mean '::hoverspan' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[02:45:29.763] Browser ERROR   ./app/globals.css:3550:18
+Parsing CSS source code failed
+  3548 |   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  3549 | }
+> 3550 | .hover\:bg-white:hoverspan {
+       |                  ^
+  3551 |     font-family: 'Manrope', sans-serif;
+  3552 |     font-size: 14px;
+  3553 |     font-weight: 700;
+
+'hoverspan' is not recognized as a valid pseudo-class. Did you mean '::hoverspan' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[02:45:58.496] Browser ERROR   ./app/globals.css:3550:18
+Parsing CSS source code failed
+  3548 |   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  3549 | }
+> 3550 | .hover\:bg-white:hoverspan {
+       |                  ^
+  3551 |     font-family: 'Manrope', sans-serif;
+  3552 |     font-size: 14px;
+  3553 |     font-weight: 700;
+
+'hoverspan' is not recognized as a valid pseudo-class. Did you mean '::hoverspan' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[02:55:56.763] Browser ERROR   ./app/globals.css:3550:18
+Parsing CSS source code failed
+  3548 |   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  3549 | }
+> 3550 | .hover\:bg-white:hoverspan {
+       |                  ^
+  3551 |     font-family: 'Manrope', sans-serif;
+  3552 |     font-size: 14px;
+  3553 |     font-weight: 700;
+
+'hoverspan' is not recognized as a valid pseudo-class. Did you mean '::hoverspan' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[02:55:56.763] Browser ERROR   ./app/globals.css:3550:18
+Parsing CSS source code failed
+  3548 |   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  3549 | }
+> 3550 | .hover\:bg-white:hoverspan {
+       |                  ^
+  3551 |     font-family: 'Manrope', sans-serif;
+  3552 |     font-size: 14px;
+  3553 |     font-weight: 700;
+
+'hoverspan' is not recognized as a valid pseudo-class. Did you mean '::hoverspan' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[02:55:56.763] Browser ERROR   ./app/globals.css:3550:18
+Parsing CSS source code failed
+  3548 |   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  3549 | }
+> 3550 | .hover\:bg-white:hoverspan {
+       |                  ^
+  3551 |     font-family: 'Manrope', sans-serif;
+  3552 |     font-size: 14px;
+  3553 |     font-weight: 700;
+
+'hoverspan' is not recognized as a valid pseudo-class. Did you mean '::hoverspan' (pseudo-element) or is this a typo?
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]

@@ -181,19 +181,27 @@ body {
   .font-serif-italic {
     font-family: var(--font-serif);
     font-style: italic;
-    font-size: 24px;
-    line-height: 32px;
   }
 
-  /* Specific typography classes */
-  .font-display {
+  /* Typography overrides for specific element+class combinations */
+  a.font-display {
     font-family: 'Cinzel', serif;
+    font-size: 24px;
     font-weight: 400;
-    letter-spacing: -0.05em;
+    line-height: 32px;
+    letter-spacing: -1.2px;
   }
 
-  /* Section headings */
-  .section-label {
+  button.text-sm {
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+  }
+
+  span.block {
     font-family: 'Manrope', sans-serif;
     font-size: 12px;
     font-weight: 700;
@@ -202,13 +210,100 @@ body {
     letter-spacing: 3.6px;
   }
 
-  .prose {
+  span.px-2 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+  }
+
+  span.text-xs {
+    font-family: 'Manrope', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+  }
+
+  span.bg-white {
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+  }
+
+  span.inline-block {
+    font-family: 'Manrope', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
+  }
+
+  h2.font-display {
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    letter-spacing: -1.2px;
+    line-height: 1;
+  }
+
+  h2.font-display:is(.text-5xl, .text-6xl, .text-7xl, .text-8xl, .text-9xl) {
+    /* Responsive h2 sizes */
+  }
+
+  h3.font-display {
+    font-family: 'Cinzel', serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: -0.9px;
+  }
+
+  h3.text-2xl {
+    font-family: 'Cinzel', serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+  }
+
+  p.font-serif-italic {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    font-style: italic;
+  }
+
+  p.text-muted-foreground {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 29.25px;
+  }
+
+  p.text-xl {
     font-family: 'Manrope', sans-serif;
     font-size: 20px;
     font-weight: 300;
-    line-height: 36px;
+    line-height: 28px;
   }
 
+  /* Using element attribute selectors for whitespace-based classes */
+  p[class*="text-white"] {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+  
   /* Custom scrollbar */
   ::-webkit-scrollbar {
     width: 6px;
