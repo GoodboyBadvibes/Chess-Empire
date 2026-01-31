@@ -94,11 +94,64 @@ body {
   * {
     @apply border-border;
   }
+  
   body {
     @apply bg-background text-foreground antialiased font-body;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
   }
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-display tracking-tight text-primary;
+  
+  h1, h2 {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    @apply text-primary;
+  }
+  
+  h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    @apply text-primary;
+  }
+  
+  h4, h5, h6 {
+    font-family: 'Manrope', sans-serif;
+    @apply text-primary;
+  }
+  
+  p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  a {
+    font-family: 'Manrope', sans-serif;
+    color: inherit;
+    text-decoration: inherit;
+  }
+  
+  button, input, textarea, select {
+    font-family: 'Manrope', sans-serif;
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  
+  figcaption {
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  blockquote {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    line-height: 1.6;
+    font-style: italic;
+  }
+  
+  code, pre {
+    font-family: 'Courier New', monospace;
   }
   
   /* Selection color for luxury feel */
