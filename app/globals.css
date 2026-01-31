@@ -4,11 +4,21 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  -webkit-text-size-adjust: 100%;
+  tab-size: 4;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  -webkit-tap-highlight-color: transparent;
+}
+
 :root {
   /* Fonts */
   --font-display: 'Cinzel', serif;    /* Luxury, bold, classic but sharp */
   --font-serif: 'Playfair Display', serif; /* Elegant, editorial */
   --font-body: 'Manrope', sans-serif; /* Clean, modern, high readability */
+  --font-sans: var(--font-body);
+  --font-mono: 'Courier New', monospace;
 
   /* Palette - High Contrast Luxury */
   /* Background: Off-white/Cream for warmth vs stark white */
@@ -45,6 +55,14 @@
   --destructive-foreground: 0 0% 98%;
 
   --radius: 0rem; /* Sharp edges for luxury feel */
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Dark Mode - Inverted Luxury */
